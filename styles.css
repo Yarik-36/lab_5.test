@@ -1,0 +1,241 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.resume-paper {
+    background-color: white;
+    width: 100%;
+    max-width: 850px;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    color: #000;
+}
+
+
+.main-header h1 {
+    color: #7b52ab; 
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc; 
+    padding-bottom: 10px;
+}
+
+
+.resume-layout {
+    display: flex;
+    gap: 30px; 
+}
+
+
+.sidebar {
+    width: 35%;
+    border: 2px solid #7b52ab; 
+    padding: 20px;
+}
+
+
+.main-content {
+    width: 65%;
+}
+
+
+h2 {
+    color: #7b52ab;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-top: 2px solid #7b52ab; 
+    border-bottom: 2px solid #7b52ab; 
+    padding: 5px 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+p, ul, address {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+address {
+    font-style: normal;
+}
+
+address p {
+    margin-bottom: 10px;
+}
+
+address strong {
+    color: #7b52ab;
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #555;
+    text-transform: uppercase;
+}
+
+/*   Модальне вікно  */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    border-top: 5px solid #7b52ab;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: #7b52ab;
+}
+
+/* Стилі полів форми */
+.modal-content label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-content input, .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.submit-btn {
+    background-color: #7b52ab;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #5a3b80;
+}
+
+/*  ТЕМНА ТЕМА */
+body.dark-theme {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .resume-paper {
+    background-color: #2d2d2d;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    color: #e0e0e0;
+}
+
+body.dark-theme .sidebar {
+    background-color: #333;
+    border-color: #9d74ce; 
+}
+
+body.dark-theme h2, 
+body.dark-theme .main-header h1,
+body.dark-theme address strong {
+    color: #9d74ce; 
+}
+
+body.dark-theme h2 {
+    border-top: 2px solid #9d74ce;
+    border-bottom: 2px solid #9d74ce;
+}
+
+/*  темне модальне вікно  */
+body.dark-theme .modal-content {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-top: 5px solid #9d74ce;
+}
+
+body.dark-theme .modal-content label,
+body.dark-theme .modal-content h2 {
+    color: #e0e0e0;
+}
+
+body.dark-theme .modal-content input,
+body.dark-theme .modal-content textarea {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+
+body.dark-theme #reviews-container div {
+    background-color: #333 !important; 
+    border-left-color: #9d74ce !important; 
+}
+
+body.dark-theme #reviews-container div strong {
+    color: #fff !important; 
+}
+
+body.dark-theme #reviews-container div p {
+    color: #ccc !important; 
+}
+
+body.dark-theme #reviews-container div a {
+    color: #9d74ce !important; 
+}
+
+
+body.dark-theme #system-info {
+    color: #ccc !important;
+}
+
+
+body.dark-theme .date {
+    color: #aaa;
+}
+
+
+body.dark-theme p.desc {
+    color: #ccc;
+}

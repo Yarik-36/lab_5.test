@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonnie Thomsen - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="resume-paper" >
+        <header class="main-header" style="position: relative;">
+            <h1>Tonnie Thomsen ✦ ✦</h1>
+            <button id="themeToggleBtn" style="position: absolute; top: 20px; right: 20px; padding: 8px 15px; cursor: pointer; border-radius: 5px; background-color: #7b52ab; color: white; border: none; font-weight: bold;"> Темна тема</button>
+        </header>
+
+        <div class="resume-layout">
+            <aside class="sidebar">
+                <section>
+                    <h2>OBJECTIVE</h2>
+                    <p>My primary objective is to provide a safe and nurturing learning environment that encourages student growth and development. I aim to facilitate engaging and challenging instruction that fosters a love for learning, critical thinking, and problem-solving skills.</p>
+                </section>
+
+                <section>
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Problem-solving</li>
+                        <li>Critical thinking</li>
+                        <li>Time management</li>
+                        <li>Lesson planning</li>
+                        <li>Leadership</li>
+                        <li>Creative writing</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>CONTACTS</h2>
+                    <address>
+                        <p><strong>ADDRESS</strong><br>987 6th Ave<br>Santa Fe, NM 76543<br>USA</p>
+                        <p><strong>PHONE</strong><br>706.555.0123</p>
+                        <p><strong>EMAIL</strong><br>tonnie@example.com</p>
+                        <p><strong>WEBSITE</strong><br>www.interestingsite.com</p>
+                    </address>
+
+                    <div style="margin-top: 20px; padding-top: 10px; border-top: 1px solid #7b52ab;">
+                        <strong style="color: #7b52ab;">System Info:</strong>
+                        <p id="system-info" style="font-size: 0.8em; color: #555; margin-top: 5px;"></p>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                <section>
+                    <h2>EXPERIENCE</h2>
+                    <div class="job">
+                        <span class="date">JAN 20XX – AUG 20XX</span>
+                        <p><strong>Teacher</strong> · Balsam Elementary School · Santa Fe, NM</p>
+                    </div>
+                    <div class="job">
+                        <span class="date">OCT 20XX – MAY 20XX</span>
+                        <p><strong>Teacher’s Aide</strong> · Balsam Elementary School · Santa Fe, NM</p>
+                    </div>
+                    <div class="job">
+                        <span class="date">SEP 20XX – JUN 20XX</span>
+                        <p><strong>Teacher’s Aide</strong> · Balsam Elementary School · Santa Fe, NM</p>
+                    </div>
+                    <p class="desc"><strong>Key responsibilities:</strong> planning and delivering effective instruction across various subjects and grade levels, assessing and monitoring student progress, and providing individualized support and intervention as needed.</p>
+                </section>
+
+                <section>
+                    <h2>EDUCATION</h2>
+                    <p><strong>Bellows College | Santa Fe, NM</strong><br>Bachelor’s Degree in Elementary Education</p>
+                </section>
+
+                <section>
+                    <h2>COMMUNICATION</h2>
+                    <p>Collaborating with colleagues, parents, and community members to support student learning and achievement is an essential responsibility of an elementary school teacher.</p>
+                </section>
+
+                <section>
+                    <h2>LEADERSHIP</h2>
+                    <p>As a teacher, I maintain a positive classroom environment that promotes student engagement, behavior management, and social-emotional development.</p>
+                </section>
+
+                <section>
+                    <h2>REFERENCES</h2>
+                    <p>Available upon request.</p>
+                </section>
+
+                <section>
+                    <h2>EMPLOYER REVIEWS</h2>
+                    <div id="reviews-container">
+                        <p style="color: #666; font-style: italic;">Loading reviews...</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2 style="color: #7b52ab; text-align: center; margin-top: 0;">Leave a message</h2>
+            
+            <form action="https://formspree.io/f/mnjookld" method="POST">
+                <label>Ім'я:</label>
+                <input type="text" name="name" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Номер телефону:</label>
+                <input type="tel" name="phone">
+
+                <label>Повідомлення:</label>
+                <textarea name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
